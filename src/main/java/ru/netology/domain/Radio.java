@@ -83,7 +83,7 @@ public class Radio {
         if (currentVolume < maxVolume){
             currentVolume++;
         }
-        else currentStation = maxVolume;
+        else currentStation = maxStation;
 
     }
     public void prevVolume(){
