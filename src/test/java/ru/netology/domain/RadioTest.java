@@ -9,28 +9,28 @@ class RadioTest {
     @Test
    public void setCurrentStationAndVolume() {
         Radio radio = new Radio(
-                50,
-                5
+                5,
+                50
         );
-        assertEquals(50,radio.getCurrentStation());
-        assertEquals(5,radio.getCurrentVolume());
+        assertEquals(5,radio.getCurrentStation());
+        assertEquals(50,radio.getCurrentVolume());
     }
 
     @Test
     void setCurrentStationAndVolumeMax() {
         Radio radio = new Radio(
-                10,
-                100
+                11,
+                101
                 );
-        assertEquals(10,radio.getCurrentStation());
-        assertEquals(100,radio.getCurrentVolume());
+        assertEquals(0,radio.getCurrentStation());
+        assertEquals(0,radio.getCurrentVolume());
     }
 
     @Test
     void setCurrentStationAndVolumeMin() {
         Radio radio = new Radio(
-                0,
-                0
+                -1,
+                -1
         );
         assertEquals(0,radio.getCurrentStation());
         assertEquals(0,radio.getCurrentVolume());
